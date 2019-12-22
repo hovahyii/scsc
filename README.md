@@ -1,2 +1,2 @@
-# scsc
-Source code for http://scscsarawak.ml/
+# Source code for SCSC 
+URL: http://scscsarawak.ml/
