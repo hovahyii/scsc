@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <meta name="description" content="Learn more about Maxis NB-IoT Challenge through SCSC...  How to install Azure CLI with apt...">
+    
+     <meta name="author" content="Jehovah Yii Zui Hon">
+    
+    <meta name="keywords" content="scsc maxis-nb-iot-challenge-workshop IoT, scsc install azure, scsc install azure on linux, scsc maxis-nb-iot-challenge-workshop, scsc iot">
+        <meta property="og:url" content="http://scscsarawak.ml/">
+
+    <meta property="og:description" content="Learn more about Maxis NB-IoT Challenge through SCSC... How to install Azure CLI with apt...">
+    
+    <meta property="og:title" content="Install Azure CLI with apt - SCSC">
+<meta property="og:image" content="http://scscsarawak.ml/data1/images/1.jpg">
+
+    <link href="/favicon4935.ico?1571717971" rel="icon">
+
+    <!-- https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use -->
+    <link href="/assets/%40fortawesome/fontawesome-free/css/all.min4935.css?1571717971" rel="stylesheet">
+
+    <link href="/assets/page4935.css?1571717971" rel="stylesheet">
+
+    <!-- http://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    <script src="/assets/jquery/dist/jquery.min4935.js?1571717971"></script>
+    <script src="/assets/popper.js/dist/umd/popper.min4935.js?1571717971"></script>
+    <script src="/assets/bootstrap/dist/js/bootstrap.min4935.js?1571717971"></script>
+
+    <!-- https://github.com/pellepim/jstimezonedetect -->
+    <script src="/assets/jstz.min4935.js?1571717971"></script>
+    <script src="/assets/text-animation.js?1571717971"></script>
+
+    <script src="/assets/jekyll-theme-cs504935.js?1571717971"></script>
+
+    <title>Install Azure CLI with apt</title>
+    <link href=/maxis-nb-iot-challenge-workshop/assets/stylesheets/application.0284f74d.css rel=stylesheet>
+    <link href=/maxis-nb-iot-challenge-workshop/assets/stylesheets/application-palette.01803549.css rel=stylesheet>
+    <style>img[alt="www.000webhost.com"]{display:none;}</style>
+
+    <link href=/maxis-nb-iot-challenge-workshop/assets/fonts/material-icons.css rel=stylesheet>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <aside class="col-md">
+
+                <header>
+                    <h1 data-id="this-is-cs50"><a href="/index.html">This is SCSC</a></h1>
+
+                    <p><a href="https://www.swinburne.edu.my/">Swinburne University of Technology</a><br /> Fall
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </p>
+                </header>
+
+                <button aria-controls="nav" aria-expanded="false" class="btn btn-sm collapsed d-md-none" data-target="aside > nav" data-toggle="collapse">Menu</button>
+
+                <nav class="collapse d-md-block">
+                    <hr />
+
+                   <ul>
+                        <li data-marker="*"><a href="/welcome-to-scsc/">Welcome</a></li>
+                        <li data-marker="*"><a href="/about-scsc/">About SCSC</a></li>
+                        <li data-marker="*"><a href="/upcoming-events/">Upcoming Events</a></li>
+                        <li data-marker="*"><a href="/scsc-event-reports/">Events &amp; Activities</a></li>
+                        <li data-marker="*"><a href="/scsc-committees-2018-&amp;-2019/">Committees</a></li>
+                        <li data-marker="*"><a href="/scsc-advisors/">Advisors</a></li>
+                        <li data-marker="*"><a href="/credits-to-scsc-website-contributors/">Credits</a></li>
+                    </ul>
+
+                    <hr />
+
+
+
+                    <ul class=md-nav__list data-md-scrollfix>
+                        Maxis NB-IoT Challenge Workshop
+                        <li class="md-nav__item md-nav__item--active"> <a class="md-nav__link md-nav__link--active" href=/maxis-nb-iot-challenge-workshop/ title=Home> Home </a>
+                        </li>
+
+                        <li>
+                            <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-2> Azure </label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/azure/getting-started/ title="Getting Started"> Getting Started </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/azure/install-azure-cli-apt/ title="Azure CLI Installation on Linux"> Azure CLI Installation on Linux </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/azure/install-azure-cli-macos/ title="Azure CLI Installation on MacOS"> Azure CLI Installation on MacOS </a> </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        
+                        <li>
+                            <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-3> Raspberry Pi </label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/getting-started/ title="Getting Started"> Getting Started </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/grovepi/ title="Grove Pi"> Grove Pi </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/nbiot/ title="Testing NB-IoT HAT"> Testing NB-IoT HAT </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/send_telemetry_to_azure/ title="Send data to Azure"> Send data to Azure </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/gnss/ title=GNSS> GNSS </a> </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-4> Web </label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/web/node-red/ title="Node Red"> Node Red </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/web/expressjs_ionic/ title="Express JS + Ionic"> Express JS + Ionic </a> </li>
+                                </ul>
+                            </nav>
+                        </li>
+                    </ul>
+
+                    <hr />
+
+
+
+                    <ul>
+                        <li data-marker="*"><a href="/forum/">Forum</a></li>
+                    </ul>
+
+
+                    <hr />
+                    
+                                 <ul>
+                        <li data-marker="*"><a href="http://tiny.cc/joinscsc" target="_blank">Join SCSC</a></li>
+                    </ul>
+
+
+                    <hr />
+
+
+                    <ul class="small">
+                        <li data-marker="*"><a href="https://devdocs.io/cpp/" target="_blank">C++ Documentation</a></li>
+                        <li data-marker=" * "><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/ " target="_blank">C# Documentation</a></li>
+                        <li data-marker="* "><a href="https://stackoverflow.com/search " target="_blank">Stack Overflow</a></li>
+                    </ul>
+
+                    <hr />
+
+                       <p style="font-size: initial">This website is official &trade; and takes effect on 28 October 2019</p>     
+                </nav>
+
+                <footer></footer>
+
+
+            </aside>
+
+            <main class="col-md markdown-body">
+
+                <div class="md-sidebar md-sidebar--secondary" data-md-component=toc>
+                    <div class=md-sidebar__scrollwrap>
+                        <div class=md-sidebar__inner>
+                            <nav class="md-nav md-nav--secondary"> <label class=md-nav__title for=__toc>Table of contents</label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=#install title=Install> Install </a>
+                                        <nav class=md-nav>
+                                            <ul class=md-nav__list>
+                                                <li class=md-nav__item> <a class=md-nav__link href=#install-with-one-command title="Install with one command"> Install with one command </a> </li>
+                                                <li class=md-nav__item> <a class=md-nav__link href=#manual-install-instructions title="Manual install instructions"> Manual install instructions </a> </li>
+                                            </ul>
+                                        </nav>
+                                    </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=#troubleshooting title=Troubleshooting> Troubleshooting </a>
+                                        <nav class=md-nav>
+                                            <ul class=md-nav__list>
+                                                <li class=md-nav__item> <a class=md-nav__link href=#lsb_release-does-not-return-the-correct-base-distribution-version title="lsb_release does not return the correct base distribution version"> lsb_release does not return the correct base distribution version </a>                                                    </li>
+                                                <li class=md-nav__item> <a class=md-nav__link href=#no-package-for-your-distribution title="No package for your distribution"> No package for your distribution </a> </li>
+                                                <li class=md-nav__item> <a class=md-nav__link href=#proxy-blocks-connection title="Proxy blocks connection"> Proxy blocks connection </a> </li>
+                                                <li class=md-nav__item> <a class=md-nav__link href=#cli-fails-to-install-or-run-on-windows-subsystem-for-linux title="CLI fails to install or run on Windows Subsystem for Linux"> CLI fails to install or run on Windows Subsystem for Linux </a>                                                    </li>
+                                            </ul>
+                                        </nav>
+                                    </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=#update title=Update> Update </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=#uninstall title=Uninstall> Uninstall </a> </li>
+                                    <li class=md-nav__item> <a class="md-nav__link md-nav__link--active" href=#__comments title=Comments> Comments </a> </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=md-content>
+                    <article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href=../../pdf/combined.pdf title="PDF Export"></a> <a class="md-icon md-content__icon" href=https://github.com/CytronTechnologies/maxis-nb-iot-challenge-workshop-nbiot-hackathon/edit/master/docs/azure/install-azure-cli-apt.md
+                            title="Edit this page"></a>
+                        <h1 id=install-azure-cli-with-apt>Install Azure CLI with apt<a class=headerlink href=#install-azure-cli-with-apt title="Permanent link">¶</a></h1>
+                        <p>If you are running a distribution that comes with <code>apt</code>, such as Ubuntu or Debian, there's an x86_64 package available for the Azure CLI. This package has been tested with and is supported for:</p>
+                        <ul>
+                            <li>Ubuntu trusty, xenial, artful, bionic, and disco</li>
+                            <li>Debian wheezy, jessie, and stretch</li>
+                        </ul>
+                        <div class="admonition info">
+                            <p class=admonition-title>Note</p>
+                            <p>The package for Azure CLI installs its own Python interpreter, and does not use the system Python.</p>
+                        </div>
+                        <h2 id=install>Install<a class=headerlink href=#install title="Permanent link">¶</a></h2>
+                        <p>We offer two ways to install the Azure CLI with distributions that support <code>apt</code>: As an all-in-one script that runs the install commands for you, and instructions that you can run as a step-by-step process on your own.</p>
+                        <h3 id=install-with-one-command>Install with one command<a class=headerlink href=#install-with-one-command title="Permanent link">¶</a></h3>
+                        <p>We offer and maintain a script which runs all of the installation commands in one step. Run it by using <code>curl</code> and pipe directly to <code>bash</code>, or download the script to a file and inspect it before running.</p>
+                        <div class=codehilite><pre><span></span>curl -sL https://aka.ms/InstallAzureCLIDeb <span class=p>|</span> sudo bash</pre></div>
+                        <div class="admonition info">
+                            <p class=admonition-title>Note</p>
+                            <p>This script is only verified for Ubuntu 16.04+ and Debian 8+. It may not work on other distributions. If you're using a derived distribution such as Linux Mint, follow the manual install instructions and perform any necessary
+                                troubleshooting.
+                            </p>
+                        </div>
+                        <h3 id=manual-install-instructions>Manual install instructions<a class=headerlink href=#manual-install-instructions title="Permanent link">¶</a></h3>
+                        <p>If you don't want to run a script as superuser, follow these manual steps to install the Azure CLI.</p>
+                        <ol>
+                            <li>
+                                <p>Get packages needed for the install process:</p>
+                                <div class=codehilite><pre><span></span>sudo apt-get update
+sudo apt-get install curl apt-transport-https lsb-release gnupg</pre></div>
+                            </li>
+                            <li>
+                                <p>Download and install the Microsoft signing key:</p>
+                                <div class=codehilite><pre><span></span>curl -sL https://packages.microsoft.com/keys/microsoft.asc | \
+gpg --dearmor | \
+sudo tee /etc/apt/trusted.gpg.d/microsoft.asc.gpg &gt; /dev/null</pre></div>
+                            </li>
+                            <li>
+                                <p>
+                                    <div id=set-release></div>Add the Azure CLI software repository:</p>
+                                <div class=codehilite><pre><span></span>AZ_REPO=$(lsb_release -cs)
+echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" | \
+sudo tee /etc/apt/sources.list.d/azure-cli.list</pre></div>
+                            </li>
+                            <li>
+                                <p>Update repository information and install the <code>azure-cli</code> package:</p>
+                                <div class=codehilite><pre><span></span>sudo apt-get update
+sudo apt-get install azure-cli</pre></div>
+                            </li>
+                        </ol>
+                        <p>Run the Azure CLI with the <code>az</code> command. To sign in, use the <code>az login</code> command.</p>
+                        <p>To learn more about different authentication methods, see <a href="https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest">Sign in with Azure CLI</a>.</p>
+                        <h2 id=troubleshooting>Troubleshooting<a class=headerlink href=#troubleshooting title="Permanent link">¶</a></h2>
+                        <p>Here are some common problems seen when installing with <code>apt</code>. If you experience a problem not covered here, <a href=https://github.com/Azure/azure-cli/issues>file an issue on github</a>.</p>
+                        <h3 id=lsb_release-does-not-return-the-correct-base-distribution-version>lsb_release does not return the correct base distribution version<a class=headerlink href=#lsb_release-does-not-return-the-correct-base-distribution-version title="Permanent link">¶</a></h3>
+                        <p>Some Ubuntu- or Debian-derived distributions such as Linux Mint may not return the correct version name from <code>lsb_release</code>. This value is used in the install process to determine the package to install. If you know the
+                            code name of the Ubuntu or Debian version your distribution is derived from, you can set the <code>AZ_REPO</code> value manually when <a href=#set-release>adding the repository</a>. Otherwise, look up information for your distribution
+                            on how to determine the base distribution code name and set <code>AZ_REPO</code> to the correct value.</p>
+                        <h3 id=no-package-for-your-distribution>No package for your distribution<a class=headerlink href=#no-package-for-your-distribution title="Permanent link">¶</a></h3>
+                        <p>Sometimes it may be a while after a distribution is released before there's an Azure CLI package available for it. The Azure CLI designed to be resilient with regards to future versions of dependencies and rely on as few of them
+                            as possible. If there's no package available for your base distribution, try a package for an earlier distribution.</p>
+                        <p>To do this, set the value of <code>AZ_REPO</code> manually when <a href=#set-release>adding the repository</a>. For Ubuntu distributions use the <code>bionic</code> repository, and for Debian distributions use <code>stretch</code>.
+                            Distributions released before Ubuntu Trusty and Debian Wheezy are not supported.</p>
+                        <h3 id=proxy-blocks-connection>Proxy blocks connection<a class=headerlink href=#proxy-blocks-connection title="Permanent link">¶</a></h3>
+                        <p>If you're unable to connect to an external resource due to a proxy, make sure that you've correctly set the HTTP_PROXY and HTTPS_PROXY variables in your shell. You will need to contact your system administrator to know what host(s)
+                            and port(s) to use for these proxies.</p>
+                        <p>These values are respected by many Linux programs, including those which are used in the install process. To set these values:</p>
+                        <p><em>No auth</em>
+                            <div class=codehilite><pre><span></span>export HTTP_PROXY=http://[proxy]:[port]
+export HTTPS_PROXY=https://[proxy]:[port]</pre></div>
+                        </p>
+                        <p><em>Basic auth</em>
+                            <div class=codehilite><pre><span></span>export HTTP_PROXY=http://[username]:[password]@[proxy]:[port]
+export HTTPS_PROXY=https://[username]:[password]@[proxy]:[port]</pre></div>
+                        </p>
+                        <div class="admonition info">
+                            <p class=admonition-title>Note</p>
+                            <p>If you are behind a proxy, these shell variables must be set to connect to Azure services with the CLI. If you are not using basic auth, it's recommended to export these variables in your .bashrc file. Always follow your business'
+                                security policies and the requirements of your system administrator.</p>
+                        </div>
+                        <p>You may also want to explicitly configure <code>apt</code> to use this proxy at all times. Make sure that the following lines appear in an <code>apt</code> configuration file in <code>/etc/apt/apt.conf.d/</code>. We recommend using
+                            either your existing global configuration file, an existing proxy configuration file, <code>40proxies</code>, or <code>99local</code>, but follow your system administration requirements.</p>
+                        <div class=codehilite><pre><span></span>Acquire {
+    http::proxy "http://[username]:[password]@[proxy]:[port]";
+    https::proxy "https://[username]:[password]@[proxy]:[port]";
+}</pre></div>
+                        <p>If your proxy does not use basic auth, <strong>remove</strong> the <code>[username]:[password]@</code> portion of the proxy URI. If you require more information for proxy configuration, see the official Ubuntu documentation:</p>
+                        <ul>
+                            <li><a href=http://manpages.ubuntu.com/manpages/bionic/en/man5/apt.conf.5.html>apt.conf manpage</a></li>
+                            <li><a href=https://help.ubuntu.com/community/AptGet/Howto#Setting_up_apt-get_to_use_a_http-proxy>Ubuntu wiki - apt-get howto</a></li>
+                        </ul>
+                        <p>In order to get the Microsoft signing key and get the package from our repository, your proxy needs to allow HTTPS connections to the following address:</p>
+                        <p><a href=https://packages.microsoft.com>https://packages.microsoft.com</a></p>
+                        <h3 id=cli-fails-to-install-or-run-on-windows-subsystem-for-linux>CLI fails to install or run on Windows Subsystem for Linux<a class=headerlink href=#cli-fails-to-install-or-run-on-windows-subsystem-for-linux title="Permanent link">¶</a></h3>
+                        <p>Since <a href=https://docs.microsoft.com/en-us/windows/wsl/about>Windows Subsystem for Linux (WSL)</a> is a system call translation layer on top of the Windows platform, you might experience an error when trying to install or run
+                            the Azure CLI. The CLI relies on some features that may have a bug in WSL. If you experience an error no matter how you install the CLI, there's a good chance it's an issue with WSL and not with the CLI install process.</p>
+                        <p>To troubleshoot your WSL installation and possibly resolve issues:</p>
+                        <ul>
+                            <li>If you can, run an identical install process on a Linux machine or VM to see if it succeeds. If it does, your issue is almost certainly related to WSL. To start a Linux VM in Azure, see the <a href=https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal>create a Linux VM in the Azure Portal</a>                                documentation.</li>
+                            <li>Make sure that you're running the latest version of WSL. To get the latest version, <a href=https://support.microsoft.com/help/4027667/windows-10-update>update your Windows 10 installation</a>.</li>
+                            <li>Check for any <a href=https://github.com/Microsoft/WSL/issues>open issues</a> with WSL which might address your problem. Often there will be suggestions on how to work around the problem, or information about a release where
+                                the issue will be fixed.</li>
+                            <li>If there are no existing issues for your problem, <a href=https://github.com/Microsoft/WSL/issues/new>file a new issue with WSL</a> and make sure that you include as much information as possible.</li>
+                        </ul>
+                        <p>If you continue to have issues installing or running on WSL, consider <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest">installing the CLI for Windows</a>.</p>
+                        <h2 id=update>Update<a class=headerlink href=#update title="Permanent link">¶</a></h2>
+                        <p>Use <code>apt-get upgrade</code> to update the CLI package.</p>
+                        <div class=codehilite><pre><span></span>sudo apt-get update &amp;&amp; sudo apt-get upgrade</pre></div>
+                        <div class="admonition info">
+                            <p class=admonition-title>Note</p>
+                            <p>This command upgrades all of the installed packages on your system that have not had a dependency change. To upgrade the CLI only, use <code>apt-get install</code>.</p>
+                            <div class=codehilite><pre><span></span>sudo apt-get update &amp;&amp; sudo apt-get install --only-upgrade -y azure-cli</pre></div>
+                        </div>
+                        <h2 id=uninstall>Uninstall<a class=headerlink href=#uninstall title="Permanent link">¶</a></h2>
+                        <ol>
+                            <li>
+                                <p>Uninstall with <code>apt-get remove</code>:</p>
+                                <div class=codehilite><pre><span></span>sudo apt-get remove -y azure-cli</pre></div>
+                            </li>
+                            <li>
+                                <p>If you don't plan to reinstall the CLI, remove the Azure CLI repository information:</p>
+                                <div class=codehilite><pre><span></span>sudo rm /etc/apt/sources.list.d/azure-cli.list</pre></div>
+                            </li>
+                            <li>
+                                <p>Remove the signing key:</p>
+                                <div class=codehilite><pre><span></span>sudo rm /etc/apt/trusted.gpg.d/microsoft.asc.gpg</pre></div>
+                            </li>
+                            <li>
+                                <p>Remove any unneeded packages:</p>
+                                <div class=codehilite><pre><span></span>sudo apt autoremove</pre></div>
+                            </li>
+                        </ol>
+                        <div class="admonition info">
+                            <p class=admonition-title>References</p>
+                            <p>For more references, please refer to <a href=https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt>Microsoft Documentation - Install Azure CLI with apt</a></p>
+                        </div>
+                        <h2 id=__comments>Comments</h2>
+                        <div id=disqus_thread></div>
+                        <script>
+                       var disqus_config = function () {
+                          this.page.url = "https://cytrontechnologies.github.io/maxis-nbiot-hackathon/azure/install-azure-cli-apt/";
+                          this.page.identifier =
+                            "/azure/install-azure-cli-apt/";
+                        };
+                        (function() {
+                          var d = document, s = d.createElement("script");
+                          s.src = "//maxischallenge.disqus.com/embed.js";
+                          s.setAttribute("data-timestamp", +new Date());
+                          (d.head || d.body).appendChild(s);
+                        })();
+                        </script>
+                    </article>
+
+                    <footer class=md-footer>
+                        <div class=md-footer-nav>
+                            <nav class="md-footer-nav__inner md-grid">
+                                <a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href=/maxis-nb-iot-challenge-workshop/azure/getting-started/ rel=prev title="Getting Started">
+                                    <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"> <span class=md-flex__ellipsis> <span class=md-footer-nav__direction> Previous: </span> Getting Started </span>
+                                    </div>
+                                    <div class="md-flex__cell md-flex__cell--shrink"> <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i> </div>
+                                </a>
+                                <a class="md-flex md-footer-nav__link md-footer-nav__link--next" href=/maxis-nb-iot-challenge-workshop/azure/install-azure-cli-macos/ rel=next title="Azure CLI Installation on MacOS">
+                                    <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"> <span class=md-flex__ellipsis> <span class=md-footer-nav__direction> Next: </span> Azure CLI Installation on MacOS </span>
+                                    </div>
+                                    <div class="md-flex__cell md-flex__cell--shrink"> <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i> </div>
+                                </a>
+                            </nav>
+                        </div>
+                    </footer>
+
+                </div>
+                             
+            </main>
+        </div>
+    </div>
+    
+    
+     
+  <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v4.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+          <!-- Your customer chat code -->
+          <div class="fb-customerchat"
+                attribution=setup_tool
+                page_id="548175778947897"
+          logged_in_greeting="Welcome to SCSC! How can I help you?"
+          logged_out_greeting="Thanks! See you soon!">
+              </div>
+    
+    <script src=../../assets/javascripts/application.245445c6.js></script>
+    <script>
+        app.initialize({
+            version: "1.0.4",
+            url: {
+                base: "../.."
+            }
+        })
+   </script>
+   
+              
+   
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+     <meta name="description" content="Learn more about Maxis NB-IoT Challenge through SCSC... How to install Azure CLI on macOS...">
+    
+    <meta name="keywords" content="scsc maxis-nb-iot-challenge-workshop IoT, scsc install azure, scsc install azure on mac, scsc install azure on macos, scsc maxis-nb-iot-challenge-workshop, scsc iot">
+    
+     <meta name="author" content="Jehovah Yii Zui Hon">
+    <meta property="og:url" content="http://scscsarawak.ml/">
+
+    <meta property="og:image" content="http://scscsarawak.ml/data1/images/1.jpg">
+
+    <meta property="og:description" content="Learn more about Maxis NB-IoT Challenge through SCSC... How to install Azure CLI on macOS...">
+
+    <meta property="og:title" content="Install Azure CLI on macOS - SCSC">
+
+    <link href="/favicon4935.ico?1571717971" rel="icon">
+
+    <!-- https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use -->
+    <link href="/assets/%40fortawesome/fontawesome-free/css/all.min4935.css?1571717971" rel="stylesheet">
+
+    <link href="/assets/page4935.css?1571717971" rel="stylesheet">
+
+    <!-- http://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    <script src="/assets/jquery/dist/jquery.min4935.js?1571717971"></script>
+    <script src="/assets/popper.js/dist/umd/popper.min4935.js?1571717971"></script>
+    <script src="/assets/bootstrap/dist/js/bootstrap.min4935.js?1571717971"></script>
+
+    <!-- https://github.com/pellepim/jstimezonedetect -->
+    <script src="/assets/jstz.min4935.js?1571717971"></script>
+    <script src="/assets/text-animation.js?1571717971"></script>
+
+    <script src="/assets/jekyll-theme-cs504935.js?1571717971"></script>
+
+    <title>Install Azure CLI on macOS</title>
+    <link href=/maxis-nb-iot-challenge-workshop/assets/stylesheets/application.0284f74d.css rel=stylesheet>
+    <link href=/maxis-nb-iot-challenge-workshop/assets/stylesheets/application-palette.01803549.css rel=stylesheet>
+    <style>img[alt="www.000webhost.com"]{display:none;}</style>
+
+    <link href=/maxis-nb-iot-challenge-workshop/assets/fonts/material-icons.css rel=stylesheet>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <aside class="col-md">
+
+                <header>
+                    <h1 data-id="this-is-cs50"><a href="/index.html">This is SCSC</a></h1>
+
+                    <p><a href="https://www.swinburne.edu.my/">Swinburne University of Technology</a><br /> Fall
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </p>
+                </header>
+
+                <button aria-controls="nav" aria-expanded="false" class="btn btn-sm collapsed d-md-none" data-target="aside > nav" data-toggle="collapse">Menu</button>
+
+                <nav class="collapse d-md-block">
+                    <hr />
+
+                    <ul>
+                        <li data-marker="*"><a href="/welcome-to-scsc/">Welcome</a></li>
+                        <li data-marker="*"><a href="/about-scsc/">About SCSC</a></li>
+                        <li data-marker="*"><a href="/upcoming-events/">Upcoming Events</a></li>
+                        <li data-marker="*"><a href="/scsc-event-reports/">Events &amp; Activities</a></li>
+                        <li data-marker="*"><a href="/scsc-committees-2018-&amp;-2019/">Committees</a></li>
+                        <li data-marker="*"><a href="/scsc-advisors/">Advisors</a></li>
+                        <li data-marker="*"><a href="/credits-to-scsc-website-contributors/">Credits</a></li>
+                    </ul>
+
+                    <hr />
+
+
+
+
+
+                    <ul class=md-nav__list data-md-scrollfix>
+                        Maxis NB-IoT Challenge Workshop
+                        <li class="md-nav__item md-nav__item--active"> <a class="md-nav__link md-nav__link--active" href=/maxis-nb-iot-challenge-workshop/ title=Home> Home </a>
+                        </li>
+
+                        <li>
+                            <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-2> Azure </label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/azure/getting-started/ title="Getting Started"> Getting Started </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/azure/install-azure-cli-apt/ title="Azure CLI Installation on Linux"> Azure CLI Installation on Linux </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/azure/install-azure-cli-macos/ title="Azure CLI Installation on MacOS"> Azure CLI Installation on MacOS </a> </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-3> Raspberry Pi </label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/getting-started/ title="Getting Started"> Getting Started </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/grovepi/ title="Grove Pi"> Grove Pi </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/nbiot/ title="Testing NB-IoT HAT"> Testing NB-IoT HAT </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/send_telemetry_to_azure/ title="Send data to Azure"> Send data to Azure </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/gnss/ title=GNSS> GNSS </a> </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-4> Web </label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/web/node-red/ title="Node Red"> Node Red </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/web/expressjs_ionic/ title="Express JS + Ionic"> Express JS + Ionic </a> </li>
+                                </ul>
+                            </nav>
+                        </li>
+                    </ul>
+
+                    <hr />
+
+
+
+                    <ul>
+                        <li data-marker="*"><a href="/forum/">Forum</a></li>
+                    </ul>
+
+
+                    <hr />
+                    
+                              <ul>
+                        <li data-marker="*"><a href="http://tiny.cc/joinscsc" target="_blank">Join SCSC</a></li>
+                    </ul>
+
+
+
+                    <hr />
+
+
+                    <ul class="small">
+                        <li data-marker="*"><a href="https://devdocs.io/cpp/" target="_blank">C++ Documentation</a></li>
+                        <li data-marker=" * "><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/ " target="_blank">C# Documentation</a></li>
+                        <li data-marker="* "><a href="https://stackoverflow.com/search " target="_blank">Stack Overflow</a></li>
+                    </ul>
+
+                    <hr />
+
+
+                        <p style="font-size: initial">This website is official &trade; and takes effect on 28 October 2019</p>     
+                </nav>
+
+                <footer></footer>
+
+
+            </aside>
+
+            <main class="col-md markdown-body">
+
+                <div class="md-sidebar md-sidebar--secondary" data-md-component=toc>
+                    <div class=md-sidebar__scrollwrap>
+                        <div class=md-sidebar__inner>
+                            <nav class="md-nav md-nav--secondary"> <label class=md-nav__title for=__toc>Table of contents</label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=#install title=Install> Install </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=#troubleshooting title=Troubleshooting> Troubleshooting </a>
+                                        <nav class=md-nav>
+                                            <ul class=md-nav__list>
+                                                <li class=md-nav__item> <a class=md-nav__link href=#unable-to-find-python-or-installed-packages title="Unable to find Python or installed packages"> Unable to find Python or installed packages </a> </li>
+                                                <li class=md-nav__item>
+                                                    <a class=md-nav__link href=#cli-version-1x-is-installed title="CLI version 1.x is installed"> CLI version 1.x is installed </a> </li>
+                                                <li class=md-nav__item> <a class=md-nav__link href=#proxy-blocks-connection title="Proxy blocks connection"> Proxy blocks connection </a> </li>
+                                            </ul>
+                                        </nav>
+                                    </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=#update title=Update> Update </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=#uninstall title=Uninstall> Uninstall </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=#other-installation-methods title="Other installation methods"> Other installation methods </a> </li>
+                                    <li class=md-nav__item> <a class="md-nav__link md-nav__link--active" href=#__comments title=Comments> Comments </a> </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class=md-content>
+                    <article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href=../../pdf/combined.pdf title="PDF Export"></a> <a class="md-icon md-content__icon" href=https://github.com/CytronTechnologies/maxis-nb-iot-challenge-workshop-nbiot-hackathon/edit/master/docs/azure/install-azure-cli-macos.md
+                            title="Edit this page"></a>
+                        <h1 id=install-azure-cli-on-macos>Install Azure CLI on macOS<a class=headerlink href=#install-azure-cli-on-macos title="Permanent link">¶</a></h1>
+                        <p>For the macOS platform, you can install the Azure CLI with <a href=https://brew.sh>homebrew package manager</a>. Homebrew makes it easy to keep your installation of the CLI update to date. The CLI package has been tested on macOS
+                            versions 10.9 and later.</p>
+                        <h2 id=install>Install<a class=headerlink href=#install title="Permanent link">¶</a></h2>
+                        <p>Homebrew is the easiest way to manage your CLI install. It provides convenient ways to install, update, and uninstall. If you don't have homebrew available on your system, <a href=https://docs.brew.sh/Installation.html>install homebrew</a>                            before continuing.</p>
+                        <p>You can install the CLI by updating your brew repository information, and then running the <code>install</code> command:</p>
+                        <div class=codehilite><pre><span></span>brew update <span class=o>&amp;&amp;</span> brew install azure-cli
+</pre></div>
+                        <blockquote>
+                            <p>The Azure CLI has a dependency on the <code>python3</code> package in Homebrew, and will install it on your system, even if Python 2 is available. The Azure CLI is guaranteed to be compatible with the latest version of <code>python3</code>                                published on Homebrew.</p>
+                        </blockquote>
+                        <p>You can then run the Azure CLI with the <code>az</code> command. To sign in, use <code>az login</code> command.</p>
+                        <p>To learn more about different authentication methods, see <a href="https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest">Sign in with Azure CLI</a>.</p>
+                        <h2 id=troubleshooting>Troubleshooting<a class=headerlink href=#troubleshooting title="Permanent link">¶</a></h2>
+                        <p>If you encounter a problem when installing the CLI through Homebrew, here are some common errors. If you experience a problem not covered here, <a href=https://github.com/Azure/azure-cli/issues>file an issue on github</a>.</p>
+                        <h3 id=unable-to-find-python-or-installed-packages>Unable to find Python or installed packages<a class=headerlink href=#unable-to-find-python-or-installed-packages title="Permanent link">¶</a></h3>
+                        <p>There may be a minor version mismatch or other issue during homebrew installation. The CLI doesn't use a Python virtual environment, so it relies on finding the installed Python version. A possible fix is to install and relink
+                            the <code>python3</code> dependency from Homebrew.</p>
+                        <div class=codehilite><pre><span></span>brew update <span class=o>&amp;&amp;</span> brew install python3 <span class=o>&amp;&amp;</span> brew upgrade python3
+brew link --overwrite python3
+</pre></div>
+                        <h3 id=cli-version-1x-is-installed>CLI version 1.x is installed<a class=headerlink href=#cli-version-1x-is-installed title="Permanent link">¶</a></h3>
+                        <p>If an out-of-date version was installed, it could be because of a stale homebrew cache. Follow the <a href=#Update>update</a> instructions.</p>
+                        <h3 id=proxy-blocks-connection>Proxy blocks connection<a class=headerlink href=#proxy-blocks-connection title="Permanent link">¶</a></h3>
+                        <p>You may be unable to get resources from Homebrew unless you have correctly configured it to use your proxy. Follow the <a href=https://docs.brew.sh/Manpage#using-homebrew-behind-a-proxy>Homebrew proxy configuration instructions</a>.</p>
+                        <blockquote>
+                            <p>If you are behind a proxy, <code>HTTP_PROXY</code> and <code>HTTPS_PROXY</code> must be set to connect to Azure services with the CLI. If you are not using basic auth, it's recommended to export these variables in your <code>.bashrc</code>                                file. Always follow your business' security policies and the requirements of your system administrator.</p>
+                        </blockquote>
+                        <p>In order to get the bottle resources from Homebrew, your proxy needs to allow HTTPS connections to the following addresses:</p>
+                        <ul>
+                            <li><code>https://formulae.brew.sh</code></li>
+                            <li><code>https://homebrew.bintray.com</code></li>
+                        </ul>
+                        <h2 id=update>Update<a class=headerlink href=#update title="Permanent link">¶</a></h2>
+                        <p>The CLI is regularly updated with bug fixes, improvements, new features, and preview functionality. A new release is available roughly every two weeks. Update your local repository information and then upgrade the <code>azure-cli</code>                            package.</p>
+                        <div class=codehilite><pre><span></span>brew update <span class=o>&amp;&amp;</span> brew upgrade azure-cli
+</pre></div>
+                        <h2 id=uninstall>Uninstall<a class=headerlink href=#uninstall title="Permanent link">¶</a></h2>
+                        <p>Use homebrew to uninstall the <code>azure-cli</code> package.</p>
+                        <div class=codehilite><pre><span></span>brew uninstall azure-cli
+</pre></div>
+                        <h2 id=other-installation-methods>Other installation methods<a class=headerlink href=#other-installation-methods title="Permanent link">¶</a></h2>
+                        <p>If you can't use homebrew to install the Azure CLI in your environment, it's possible to use the manual instructions for Linux. Note that this process is not officially maintained to be compatible with macOS. Using a package manager
+                            such as Homebrew is always recommended. Only use the manual installation method if you have no other option available.</p>
+                        <p>For the manual installation instructions, see <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?view=azure-cli-latest">Install Azure CLI on Linux manually</a>.</p>
+                        <h2 id=__comments>Comments</h2>
+                        <div id=disqus_thread></div>
+                        <script>
+                       var disqus_config = function () {
+                          this.page.url = "https://cytrontechnologies.github.io/maxis-nbiot-hackathon/azure/install-azure-cli-macos/";
+                          this.page.identifier =
+                            "/azure/install-azure-cli-macos/";
+                        };
+                        (function() {
+                          var d = document, s = d.createElement("script");
+                          s.src = "//maxischallenge.disqus.com/embed.js";
+                          s.setAttribute("data-timestamp", +new Date());
+                          (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    </article>
+
+                    <footer class=md-footer>
+                        <div class=md-footer-nav>
+                            <nav class="md-footer-nav__inner md-grid">
+                                <a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href=/maxis-nb-iot-challenge-workshop/azure/install-azure-cli-apt/ rel=prev title="Azure CLI Installation on Linux">
+                                    <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"> <span class=md-flex__ellipsis> <span class=md-footer-nav__direction> Previous </span> Azure CLI Installation on Linux </span>
+                                    </div>
+                                    <div class="md-flex__cell md-flex__cell--shrink"> <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i> </div>
+
+                                </a>
+                                <a class="md-flex md-footer-nav__link md-footer-nav__link--next" href=/maxis-nb-iot-challenge-workshop/raspberrypi/getting-started/ rel=next title="Getting Started">
+                                    <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"> <span class=md-flex__ellipsis> <span class=md-footer-nav__direction> Next </span> Getting Started </span>
+                                    </div>
+                                    <div class="md-flex__cell md-flex__cell--shrink"> <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i> </div>
+                                </a>
+                            </nav>
+                        </div>
+                    </footer>
+
+                </div>
+                
+                           
+            </main>
+        </div>
+    </div>
+    <script src=../../assets/javascripts/application.245445c6.js></script>
+    <script>
+        app.initialize({
+            version: "1.0.4",
+            url: {
+                base: "../.."
+            }
+        })
+    </script>
+  
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v4.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="548175778947897"
+  logged_in_greeting="Welcome to SCSC! How can I help you?"
+  logged_out_greeting="Thanks! See you soon!">
+      </div>
+   
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Learn more about Maxis NB-IoT Challenge through SCSC... Send simulated telemetry using Raspberry Pi...">
+    
+    <meta name="keywords" content="scsc maxis-nb-iot-challenge-workshop IoT, scsc Send simulated telemetry using Raspberry Pi, scsc Send data to Azure, scsc maxis-nb-iot-challenge-workshop, scsc iot">
+    
+     <meta name="author" content="Jehovah Yii Zui Hon">
+
+        <meta property="og:url" content="http://scscsarawak.ml/">
+
+    <meta property="og:description" content="Learn more about Maxis NB-IoT Challenge through SCSC... Send simulated telemetry using Raspberry Pi...">
+    
+    <meta property="og:image" content="http://scscsarawak.ml/data1/images/1.jpg">
+
+    <meta property="og:title" content="Send simulated telemetry using Raspberry Pi - SCSC">
+
+ 
+    <link href="/favicon4935.ico?1571717971" rel="icon">
+
+    <!-- https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use -->
+    <link href="/assets/%40fortawesome/fontawesome-free/css/all.min4935.css?1571717971" rel="stylesheet">
+
+    <link href="/assets/page4935.css?1571717971" rel="stylesheet">
+
+    <!-- http://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    <script src="/assets/jquery/dist/jquery.min4935.js?1571717971"></script>
+    <script src="/assets/popper.js/dist/umd/popper.min4935.js?1571717971"></script>
+    <script src="/assets/bootstrap/dist/js/bootstrap.min4935.js?1571717971"></script>
+
+    <!-- https://github.com/pellepim/jstimezonedetect -->
+    <script src="/assets/jstz.min4935.js?1571717971"></script>
+    <script src="/assets/text-animation.js?1571717971"></script>
+
+    <script src="/assets/jekyll-theme-cs504935.js?1571717971"></script>
+
+    <title>Send simulated telemetry using Raspberry Pi</title>
+    <link href=/maxis-nb-iot-challenge-workshop/assets/stylesheets/application.0284f74d.css rel=stylesheet>
+    <link href=/maxis-nb-iot-challenge-workshop/assets/stylesheets/application-palette.01803549.css rel=stylesheet>
+    <style>img[alt="www.000webhost.com"]{display:none;}</style>
+
+    <link href=/maxis-nb-iot-challenge-workshop/assets/fonts/material-icons.css rel=stylesheet>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <aside class="col-md">
+
+                <header>
+                    <h1 data-id="this-is-cs50"><a href="/index.html">This is SCSC</a></h1>
+
+                    <p><a href="https://www.swinburne.edu.my/">Swinburne University of Technology</a><br /> Fall
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </p>
+                </header>
+
+                <button aria-controls="nav" aria-expanded="false" class="btn btn-sm collapsed d-md-none" data-target="aside > nav" data-toggle="collapse">Menu</button>
+
+                <nav class="collapse d-md-block">
+                    <hr />
+
+                    <ul>
+                        <li data-marker="*"><a href="/welcome-to-scsc/">Welcome</a></li>
+                        <li data-marker="*"><a href="/about-scsc/">About SCSC</a></li>
+                        <li data-marker="*"><a href="/upcoming-events/">Upcoming Events</a></li>
+                        <li data-marker="*"><a href="/scsc-event-reports/">Events &amp; Activities</a></li>
+                        <li data-marker="*"><a href="/scsc-committees-2018-&amp;-2019/">Committees</a></li>
+                        <li data-marker="*"><a href="/scsc-advisors/">Advisors</a></li>
+                        <li data-marker="*"><a href="/credits-to-scsc-website-contributors/">Credits</a></li>
+                    </ul>
+
+                    <hr />
+
+
+
+
+
+                    <ul class=md-nav__list data-md-scrollfix>
+                        Maxis NB-IoT Challenge Workshop
+                        <li class="md-nav__item md-nav__item--active"> <a class="md-nav__link md-nav__link--active" href=/maxis-nb-iot-challenge-workshop/ title=Home> Home </a>
+                        </li>
+
+                        <li>
+                            <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-2> Azure </label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/azure/getting-started/ title="Getting Started"> Getting Started </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/azure/install-azure-cli-apt/ title="Azure CLI Installation on Linux"> Azure CLI Installation on Linux </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/azure/install-azure-cli-macos/ title="Azure CLI Installation on MacOS"> Azure CLI Installation on MacOS </a> </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-3> Raspberry Pi </label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/getting-started/ title="Getting Started"> Getting Started </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/grovepi/ title="Grove Pi"> Grove Pi </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/nbiot/ title="Testing NB-IoT HAT"> Testing NB-IoT HAT </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/send_telemetry_to_azure/ title="Send data to Azure"> Send data to Azure </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/gnss/ title=GNSS> GNSS </a> </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-4> Web </label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/web/node-red/ title="Node Red"> Node Red </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/web/expressjs_ionic/ title="Express JS + Ionic"> Express JS + Ionic </a> </li>
+                                </ul>
+                            </nav>
+                        </li>
+                    </ul>
+
+                    <hr />
+
+
+
+                    <ul>
+                        <li data-marker="*"><a href="/forum/">Forum</a></li>
+                    </ul>
+
+
+                    <hr />
+                    
+                    <ul>
+                        <li data-marker="*"><a href="http://tiny.cc/joinscsc" target="_blank">Join SCSC</a></li>
+                    </ul>
+
+
+                    <hr />
+
+
+                    <ul class="small">
+                        <li data-marker="*"><a href="https://devdocs.io/cpp/" target="_blank">C++ Documentation</a></li>
+                        <li data-marker=" * "><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/ " target="_blank">C# Documentation</a></li>
+                        <li data-marker="* "><a href="https://stackoverflow.com/search " target="_blank">Stack Overflow</a></li>
+                    </ul>
+
+                    <hr />
+
+                    <p style="font-size: initial">This website is unofficial and waiting for the approval of SCSC</p>
+                </nav>
+
+                <footer></footer>
+
+
+            </aside>
+
+            <main class="col-md markdown-body">
+                <div class="md-sidebar md-sidebar--secondary" data-md-component=toc>
+                    <div class=md-sidebar__scrollwrap>
+                        <div class=md-sidebar__inner>
+                            <nav class="md-nav md-nav--secondary"> <label class=md-nav__title for=__toc>Table of contents</label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=#steps title=Steps> Steps </a> </li>
+                                    <li class=md-nav__item> <a class="md-nav__link md-nav__link--active" href=#__comments title=Comments> Comments </a> </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class=md-content>
+                    <article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href=../../pdf/combined.pdf title="PDF Export"></a> <a class="md-icon md-content__icon" href=https://github.com/CytronTechnologies/maxis-nb-iot-challenge-workshop-nbiot-hackathon/edit/master/docs/raspberrypi/send_telemetry_to_azure.md
+                            title="Edit this page"></a>
+                        <h1 id=send-simulated-telemetry-using-raspberry-pi>Send simulated telemetry using Raspberry Pi<a class=headerlink href=#send-simulated-telemetry-using-raspberry-pi title="Permanent link">¶</a></h1>
+                        <p>We will be using Raspberry Pi to send simulated temperature and humidity telemetry for testing purpose. In this workshop, we will be using <strong>Python</strong> as main language.</p>
+                        <h2 id=steps>Steps<a class=headerlink href=#steps title="Permanent link">¶</a></h2>
+                        <ol>
+                            <li>
+                                <p>Check if Python is installed. You can verify the current version of Python on your development machine using one of the following commands:</p>
+                                <p>Python2:</p>
+                                <div class=codehilite><pre><span></span>python --version
+              </pre></div>
+                                <p>Python3:</p>
+                                <div class=codehilite><pre><span></span>python3 --version
+              </pre></div>
+                            </li>
+                            <li>
+                                <p>You can download Python by running below commands.</p>
+                                <p>Python2:</p>
+                                <div class=codehilite><pre><span></span>sudo apt-get install python
+              sudo apt-get install python-dev
+              </pre></div>
+                                <p>Python3:</p>
+                                <div class=codehilite><pre><span></span>sudo apt-get install python3
+              sudo apt-get install python3-dev
+              </pre></div>
+                            </li>
+                            <li>
+                                <p>Download the sample Python project from <a href=https://github.com/Azure-Samples/azure-iot-samples-python/archive/master.zip>https://github.com/Azure-Samples/azure-iot-samples-python/archive/master.zip</a> and extract the
+                                    ZIP archive.</p>
+                            </li>
+                            <li>
+                                <p>Make sure Boost Library and OpenSSL library are installed.</p>
+                                <div class=codehilite><pre><span></span>sudo apt-get install libboost-python-dev libcurl4-openssl-dev
+              </pre></div>
+                            </li>
+                            <li>
+                                <p>Navigate to the root folder of the downloaded sample Python project. Then navigate to the <strong>iot-hub\Quickstarts\simulated-device</strong> folder.</p>
+                            </li>
+                            <li>
+                                <p>Open the <strong>SimulatedDevice.py</strong> file in a text editor of your choice.</p>
+                                <p>Replace the value of the <code>CONNECTION_STRING</code> variable with the device connection string you made a note of previously. Then save your changes to <strong>SimulatedDevice.py</strong> file.</p>
+                                <div class="admonition info">
+                                    <p class=admonition-title>Note</p>
+                                    <p>Make a note of the device connection string, which looks like <code>HostName=&lt;YourIoTHubName&gt;.azure-devices.net;DeviceId=&lt;NameOfYourDevice&gt;;SharedAccessKey={YourSharedAccessKey}</code>.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>In the local terminal window, run the following commands to install the required libraries for the simulated device application:</p>
+                                <p>Python2:</p>
+                                <div class=codehilite><pre><span></span>sudo pip install azure-iothub-device-client
+              </pre></div>
+                                <p>Python3:</p>
+                                <div class=codehilite><pre><span></span>sudo pip3 install azure-iothub-device-client
+              </pre></div>
+                            </li>
+                            <li>
+                                <p>In the local terminal window, run the following commands to run the simulated device application:</p>
+                                <p>Python2:</p>
+                                <div class=codehilite><pre><span></span>sudo python SimulatedDevice.py
+              </pre></div>
+                                <p>Python3:</p>
+                                <div class=codehilite><pre><span></span>sudo python3 SimulatedDevice.py
+              </pre></div>
+                                <div class="admonition warning">
+                                    <p class=admonition-title>Troubleshoot</p>
+                                    <p><strong>To avoid the import iothub_client error</strong> The current version of the Azure IoT SDK for Python is a wrapper over <a href=https://github.com/azure/azure-iot-sdk-c>our C SDK</a>. It is generated using the
+                                        <a href=https://www.boost.org/>Boost</a> library. Because of that, it comes with several significant limitations. See more details <a href=https://github.com/Azure/azure-iot-sdk-python#important-installation-notes---dealing-with-importerror-issues>here</a></p>
+                                    <ol>
+                                        <li>Check that you have the right version of <a href=https://github.com/Azure/azure-iot-sdk-python#important-installation-notes---dealing-with-importerror-issues>Python</a>. Be aware that only certain versions works
+                                            fine for this sample. </li>
+                                        <li>Check that you have the right version of C++ runtime <a href=https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads>Microsoft Visual C++ Redistributable for Visual Studio 2019</a>.
+                                            (We recommend the latest).</li>
+                                        <li>Verify that you have installed the iothub client:
+                                            <div class=codehilite><pre><span></span>sudo pip install azure-iothub-device-client
+              </pre></div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </li>
+                        </ol>
+                        <h2 id=__comments>Comments</h2>
+                        <div id=disqus_thread></div>
+                        <script>
+                            var disqus_config = function () {
+                              this.page.url = "https://cytrontechnologies.github.io/maxis-nbiot-hackathon/raspberrypi/send_telemetry_to_azure/";
+                              this.page.identifier =
+                                "/raspberrypi/send_telemetry_to_azure/";
+                            };
+                            (function() {
+                              var d = document, s = d.createElement("script");
+                              s.src = "//maxischallenge.disqus.com/embed.js";
+                              s.setAttribute("data-timestamp", +new Date());
+                              (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                    </article>
+
+                    <footer class=md-footer>
+                        <div class=md-footer-nav>
+                            <nav class="md-footer-nav__inner md-grid">
+                                <a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href=../nbiot/ rel=prev title="Testing NB-IoT HAT">
+                                    <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"> <span class=md-flex__ellipsis> <span class=md-footer-nav__direction> Previous </span> Testing NB-IoT HAT </span>
+                                    </div>
+                                    <div class="md-flex__cell md-flex__cell--shrink"> <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i> </div>
+
+                                </a>
+                                <a class="md-flex md-footer-nav__link md-footer-nav__link--next" href=../gnss/ rel=next title=GNSS>
+                                    <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"> <span class=md-flex__ellipsis> <span class=md-footer-nav__direction> Next </span> GNSS </span>
+                                    </div>
+                                    <div class="md-flex__cell md-flex__cell--shrink"> <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i> </div>
+                                </a>
+                            </nav>
+                        </div>
+                    </footer>
+
+                </div>
+                
+          
+            </main>
+        </div>
+    </div>
+    <script src=../../assets/javascripts/application.245445c6.js></script>
+    <script>
+        app.initialize({
+            version: "1.0.4",
+            url: {
+                base: "../.."
+            }
+        })
+    </script>
+  
+    <!-- Load Facebook SDK for JavaScript -->
+   <script>
+  var div = document.createElement('div');
+  div.className = 'fb-customerchat';
+  div.setAttribute('page_id', '548175778947897');
+  div.setAttribute('ref', 'b64:c2NzYw==');
+  document.body.appendChild(div);
+  window.fbMessengerPlugins = window.fbMessengerPlugins || {
+    init: function () {
+      FB.init({
+        appId            : '1678638095724206',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v3.3'
+      });
+    }, callable: []
+  };
+  window.fbAsyncInit = window.fbAsyncInit || function () {
+    window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+    window.fbMessengerPlugins.init();
+  };
+  setTimeout(function () {
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  }, 0);
+</script>
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="548175778947897"
+  logged_in_greeting="Welcome to SCSC! How can I help you?"
+  logged_out_greeting="Thanks! See you soon!">
+      </div>
+   
+</body>
+
+</html>

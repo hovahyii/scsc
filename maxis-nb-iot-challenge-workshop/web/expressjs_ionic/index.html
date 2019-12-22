@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <meta name="description" content="Learn more about Maxis NB-IoT Challenge through SCSC... Web Application with ExpressJS + Ionic...">
+    
+    <meta name="keywords" content="scsc maxis-nb-iot-challenge-workshop IoT, scsc  Web Application with ExpressJS + Ionic, scsc Express JS + Ionic, scsc Setup Backend, scsc Setup Frontend, scsc maxis-nb-iot-challenge-workshop, scsc iot">
+    
+     <meta name="author" content="Jehovah Yii Zui Hon">
+
+        <meta property="og:url" content="http://scscsarawak.ml/">
+
+    <meta property="og:description" content="Learn more about Maxis NB-IoT Challenge through SCSC... Web Application with ExpressJS + Ionic...">
+
+    <meta property="og:image" content="http://scscsarawak.ml/data1/images/1.jpg">
+
+    <meta property="og:title" content="Web Application with ExpressJS + Ionic - SCSC">
+
+    <link href="/favicon4935.ico?1571717971" rel="icon">
+
+    <!-- https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use -->
+    <link href="/assets/%40fortawesome/fontawesome-free/css/all.min4935.css?1571717971" rel="stylesheet">
+
+    <link href="/assets/page4935.css?1571717971" rel="stylesheet">
+
+    <!-- http://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    <script src="/assets/jquery/dist/jquery.min4935.js?1571717971"></script>
+    <script src="/assets/popper.js/dist/umd/popper.min4935.js?1571717971"></script>
+    <script src="/assets/bootstrap/dist/js/bootstrap.min4935.js?1571717971"></script>
+
+    <!-- https://github.com/pellepim/jstimezonedetect -->
+    <script src="/assets/jstz.min4935.js?1571717971"></script>
+    <script src="/assets/text-animation.js?1571717971"></script>
+
+    <script src="/assets/jekyll-theme-cs504935.js?1571717971"></script>
+
+    <title>Web Application with ExpressJS + Ionic</title>
+    <link href=/maxis-nb-iot-challenge-workshop/assets/stylesheets/application.0284f74d.css rel=stylesheet>
+    <link href=/maxis-nb-iot-challenge-workshop/assets/stylesheets/application-palette.01803549.css rel=stylesheet>
+    <style>img[alt="www.000webhost.com"]{display:none;}</style>
+
+    <link href=/maxis-nb-iot-challenge-workshop/assets/fonts/material-icons.css rel=stylesheet>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <aside class="col-md">
+
+                <header>
+                    <h1 data-id="this-is-cs50"><a href="/index.html">This is SCSC</a></h1>
+
+                    <p><a href="https://www.swinburne.edu.my/">Swinburne University of Technology</a><br /> Fall
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </p>
+                </header>
+
+                <button aria-controls="nav" aria-expanded="false" class="btn btn-sm collapsed d-md-none" data-target="aside > nav" data-toggle="collapse">Menu</button>
+
+                <nav class="collapse d-md-block">
+                    <hr />
+
+                    <ul>
+                        <li data-marker="*"><a href="/welcome-to-scsc/">Welcome</a></li>
+                        <li data-marker="*"><a href="/about-scsc/">About SCSC</a></li>
+                        <li data-marker="*"><a href="/upcoming-events/">Upcoming Events</a></li>
+                        <li data-marker="*"><a href="/scsc-event-reports/">Events &amp; Activities</a></li>
+                        <li data-marker="*"><a href="/scsc-committees-2018-&amp;-2019/">Committees</a></li>
+                        <li data-marker="*"><a href="/scsc-advisors/">Advisors</a></li>
+                        <li data-marker="*"><a href="/credits-to-scsc-website-contributors/">Credits</a></li>
+                    </ul>
+
+                    <hr />
+
+
+
+
+
+                    <ul class=md-nav__list data-md-scrollfix>
+                        Maxis NB-IoT Challenge Workshop
+                        <li class="md-nav__item md-nav__item--active"> <a class="md-nav__link md-nav__link--active" href=/maxis-nb-iot-challenge-workshop/ title=Home> Home </a>
+                        </li>
+
+                        <li>
+                            <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-2> Azure </label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/azure/getting-started/ title="Getting Started"> Getting Started </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/azure/install-azure-cli-apt/ title="Azure CLI Installation on Linux"> Azure CLI Installation on Linux </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/azure/install-azure-cli-macos/ title="Azure CLI Installation on MacOS"> Azure CLI Installation on MacOS </a> </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-3> Raspberry Pi </label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/getting-started/ title="Getting Started"> Getting Started </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/grovepi/ title="Grove Pi"> Grove Pi </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/nbiot/ title="Testing NB-IoT HAT"> Testing NB-IoT HAT </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/send_telemetry_to_azure/ title="Send data to Azure"> Send data to Azure </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/raspberrypi/gnss/ title=GNSS> GNSS </a> </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <nav class=md-nav data-md-component=collapsible data-md-level=1> <label class=md-nav__title for=nav-4> Web </label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/web/node-red/ title="Node Red"> Node Red </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=/maxis-nb-iot-challenge-workshop/web/expressjs_ionic/ title="Express JS + Ionic"> Express JS + Ionic </a> </li>
+                                </ul>
+                            </nav>
+                        </li>
+                    </ul>
+
+                    <hr />
+
+                    <ul>
+                        <li data-marker="*"><a href="/forum/">Forum</a></li>
+                    </ul>
+
+
+                    <hr />
+                    
+                    <ul>
+                        <li data-marker="*"><a href="http://tiny.cc/joinscsc" target="_blank">Join SCSC</a></li>
+                    </ul>
+
+
+
+                    <hr />
+
+                    <ul class="small">
+                        <li data-marker="*"><a href="https://devdocs.io/cpp/" target="_blank">C++ Documentation</a></li>
+                        <li data-marker=" * "><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/ " target="_blank">C# Documentation</a></li>
+                        <li data-marker="* "><a href="https://stackoverflow.com/search " target="_blank">Stack Overflow</a></li>
+                    </ul>
+
+                    <hr />
+
+
+    <p style="font-size: initial">This website is official &trade; and takes effect on 28 October 2019</p>     
+                </nav>
+
+                <footer></footer>
+
+
+            </aside>
+
+            <main class="col-md markdown-body">
+                <div class="md-sidebar md-sidebar--secondary" data-md-component=toc>
+                    <div class=md-sidebar__scrollwrap>
+                        <div class=md-sidebar__inner>
+                            <nav class="md-nav md-nav--secondary"> <label class=md-nav__title for=__toc>Table of contents</label>
+                                <ul class=md-nav__list data-md-scrollfix>
+                                    <li class=md-nav__item> <a class=md-nav__link href=#prerequisite title=Prerequisite> Prerequisite </a> </li>
+                                    <li class=md-nav__item> <a class=md-nav__link href=#steps title=Steps> Steps </a>
+                                        <nav class=md-nav>
+                                            <ul class=md-nav__list>
+                                                <li class=md-nav__item> <a class=md-nav__link href=#setup-backend title="Setup Backend"> Setup Backend </a> </li>
+                                                <li class=md-nav__item> <a class=md-nav__link href=#setup-frontend title="Setup Frontend"> Setup Frontend </a> </li>
+                                            </ul>
+                                        </nav>
+                                    </li>
+                                    <li class=md-nav__item> <a class="md-nav__link md-nav__link--active" href=#__comments title=Comments> Comments </a> </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class=md-content>
+                    <article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href=../../pdf/combined.pdf title="PDF Export"></a> <a class="md-icon md-content__icon" href=https://github.com/CytronTechnologies/maxis-nb-iot-challenge-workshop-nbiot-hackathon/edit/master/docs/web/expressjs_ionic.md
+                            title="Edit this page"></a>
+                        <h1 id=example-web-application-with-expressjs-ionic>Example Web Application with ExpressJS + Ionic<a class=headerlink href=#example-web-application-with-expressjs-ionic title="Permanent link">¶</a></h1>
+                        <h2 id=prerequisite>Prerequisite<a class=headerlink href=#prerequisite title="Permanent link">¶</a></h2>
+                        <ol>
+                            <li>Install nodejs. Can be installed from <a href=https://nodejs.org/en/>official nodejs website</a>
+                            </li>
+                            <li>Install Ionic. Run <code>npm install -g ionic cordova</code></li>
+                        </ol>
+                        <h2 id=steps>Steps<a class=headerlink href=#steps title="Permanent link">¶</a></h2>
+                        <h3 id=setup-backend>Setup Backend<a class=headerlink href=#setup-backend title="Permanent link">¶</a></h3>
+                        <ol>
+                            <li>Go the Github repo that you have downloaded, e.g. <code>&lt;your/path/to/maxis-nb-iot-challenge-workshop-nbiot-hackathon&gt;</code>.</li>
+                            <li>The example project can be found on folder <code>WebApplication/NodeJS</code>.</li>
+                            <li>Go to the root folder of example project.</li>
+                            <li>Run command <code>npm install</code> to install dependencies.</li>
+                            <li>Create a file call .env at root folder of this project and write following content to the file.
+                                <div class=codehilite><pre><span></span><span class=n>AZURE_CONNECTION_STRING</span><span class=o>=&lt;</span><span class=n>your</span> <span class=n>azure</span> <span class=n>iot</span> <span class=n>hub</span> <span class=n>connection</span> <span class=n>string</span><span class=o>&gt;</span>
+</pre></div>
+                            </li>
+                            <li>Finally, run command <code>npm start</code> to start the server.</li>
+                        </ol>
+                        <h3 id=setup-frontend>Setup Frontend<a class=headerlink href=#setup-frontend title="Permanent link">¶</a></h3>
+                        <ol>
+                            <li>At the same folder <code>WebApplication/NodeJS</code>, go to folder named <code>frontend</code>.</li>
+                            <li>Run command <code>npm install</code> to install dependencies.</li>
+                            <li>Run <code>ionic serve</code>. Open browser at <code>http://localhost:8010</code> to see the result.</li>
+                            <li>Run <code>ionic build --prod</code> to build production files, which can be served by express server itself. If server is running, you can browse <code>http://localhost:3000</code></li>
+                        </ol>
+                        <h2 id=__comments>Comments</h2>
+                        <div id=disqus_thread></div>
+                        <script>
+                          var disqus_config = function () {
+                              this.page.url = "https://cytrontechnologies.github.io/maxis-nbiot-hackathon/web/expressjs_ionic/";
+                              this.page.identifier =
+                                "/web/expressjs_ionic/";
+                            };
+                            (function() {
+                              var d = document, s = d.createElement("script");
+                              s.src = "//maxischallenge.disqus.com/embed.js";
+                              s.setAttribute("data-timestamp", +new Date());
+                              (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                    </article>
+
+                    <footer class=md-footer>
+                        <div class=md-footer-nav>
+                            <nav class="md-footer-nav__inner md-grid">
+                                <a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href=../node-red/ rel=prev title="Node Red">
+                                    <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"> <span class=md-flex__ellipsis> <span class=md-footer-nav__direction> Previous </span> Node Red </span>
+                                    </div>
+                                    <div class="md-flex__cell md-flex__cell--shrink"> <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i> </div>
+
+                                </a>
+                            </nav>
+                        </div>
+                    </footer>
+
+                </div>
+                
+            </main>
+        </div>
+    </div>
+    <script src=../../assets/javascripts/application.245445c6.js></script>
+    <script>
+        app.initialize({
+            version: "1.0.4",
+            url: {
+                base: "../.."
+            }
+        })
+    </script>
+  <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v4.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="548175778947897"
+  logged_in_greeting="Welcome to SCSC! How can I help you?"
+  logged_out_greeting="Thanks! See you soon!">
+      </div>
+   
+</body>
+
+</html>
