@@ -38,4 +38,4 @@ MIT
 
 <br/>
 
-**This website is built by Linton IET on Campus committees & mostly by Hovah!**
+**This website is built by Swinburne CompSci Club committees & mostly by Hovah!**
