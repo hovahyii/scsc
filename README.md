@@ -2,9 +2,10 @@
 
 <br/>
 
-## 🏛️ Hall of Fame
-
-[![](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/images/0)](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/links/0)[![](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/images/1)](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/links/1)[![](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/images/2)](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/links/2)[![](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/images/3)](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/links/3)[![](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/images/4)](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/links/4)[![](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/images/5)](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/links/5)[![](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/images/6)](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/links/6)[![](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/images/7)](https://sourcerer.io/fame/hovahyii/hovahyii/scsc/links/7)
+## To-Do List
+- Backend Admin Panel
+- MongoDB database
+- N
 
 <br/>
 
@@ -17,11 +18,8 @@
 ## 💻 Technology used
 * [VS Code](https://code.visualstudio.com/) - awesome web-based text editor
 * [markdown-it](https://guides.github.com/features/mastering-markdown/) - Markdown parser done right. Fast and easy to extend.
+* [NextJS](https://nextjs.org/) - Markdown parser done right. Fast and easy to extend.
 
-<br/>
-
-## 🎯 Future Plan
-- Migrate to MERN stack 
 
 <br/>
 
