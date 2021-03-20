@@ -13,14 +13,14 @@ const Nav = () => {
         </p>
     </header>
 
-    <button aria-controls="nav" aria-expanded="false" class="btn btn-sm collapsed d-md-none" data-target="aside > nav" data-toggle="collapse">Menu</button>
+    <button aria-controls="nav" aria-expanded="false" className="btn btn-sm collapsed d-md-none" data-target="aside > nav" data-toggle="collapse">Menu</button>
 
-    <nav class="collapse d-md-block">
+    <nav className="collapse d-md-block">
         <hr />
 
       <ul>
             <li data-marker="*"><a href="/scsc/event-photos/">Event Photos</a></li>
-            <li data-marker="*"><a href="/scsc/about-scsc/">About SCSC</a></li>
+            <li data-marker="*"><a href="/about/">About SCSC</a></li>
             <li data-marker="*"><a href="/scsc/upcoming-events/">Upcoming Events</a></li>
             <li data-marker="*"><a href="/scsc/scsc-event-reports/">Events &amp; Activities</a></li>
             <li data-marker="*"><a href="/scsc/scsc-committees-2018-&amp;-2019/">Committees</a></li>
