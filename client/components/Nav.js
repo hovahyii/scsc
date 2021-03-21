@@ -3,9 +3,9 @@ const Nav = () => {
   return (
 
     <aside className="col-md">
-
+  
     <header>
-        <h1 data-id="this-is-cs50"><a href="/scsc/index.html">This is SCSC</a></h1>
+        <h1 data-id="this-is-cs50"><a href="/">This is SCSC</a></h1>
 
         <p><a href="https://www.swinburne.edu.my/">Swinburne University of Technology</a><br /> 
         Fall <span id="fullYear"></span>
@@ -25,7 +25,7 @@ const Nav = () => {
             <li data-marker="*"><a href="/scsc/scsc-event-reports/">Events &amp; Activities</a></li>
             <li data-marker="*"><a href="/scsc/scsc-committees-2018-&amp;-2019/">Committees</a></li>
             <li data-marker="*"><a href="/scsc/scsc-advisors/">Advisors</a></li>
-            <li data-marker="*"><a href="/scsc/credits-to-scsc-website-contributors/">Credits</a></li>
+            <li data-marker="*"><a href="/credits">Credits</a></li>
         </ul>
 
         <hr />
