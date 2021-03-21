@@ -1,6 +1,15 @@
+import Nav from '../components/Nav'
 
 const about = () => {
   return (
+
+    <div className="container-fluid">
+
+    <div className="row">
+      
+      <Nav />
+
+   
     <main className="col-md markdown-body">
 
 
@@ -8,7 +17,7 @@ const about = () => {
 
     <h2>History</h2>
     <p>
-        SCSC was founded in April 2018. The club later was passed to Dr. Mark Tee Kit Tsun by the end of 2018. Since then, SCSC has been collaborating with IEEE, Robotics clubs to organise activities...
+        SCSC was founded in April 2018 by Aylwin Sim and Hovah Yii. The club later was passed to Dr. Mark Tee Kit Tsun by the end of 2018. Since then, SCSC has been collaborating with IEEE, Robotics clubs to organise activities...
     </p>
 
     <h2>We code the future</h2>
@@ -30,6 +39,11 @@ const about = () => {
 
 
 </main>
+
+
+</div>
+
+</div>
 
   )
 }
