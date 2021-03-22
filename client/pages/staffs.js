@@ -11,7 +11,7 @@ export const getStaticProps = async () => {
   }
 }
 
-const staffs = ({ staffs })  => {
+const Staffs = ({ staffs })  => {
   return (
 
     <body>
@@ -24,7 +24,7 @@ const staffs = ({ staffs })  => {
 
       <main className="col-md">
 
-          <a data-id="" id="staff" ></a><h1><a data-id="" href="#staff">Staff</a></h1>
+          <a data-id="" id="staff" ></a><h1><a data-id="" href="#staff">Staffs</a></h1>
 
           <p className="mb-4 mt-4">Email us all at <a href="computerscience.club@students.swinburne.edu.my">computerscience.club@students.swinburne.edu.my</a>!</p>
           
@@ -34,7 +34,7 @@ const staffs = ({ staffs })  => {
             <div className="no-gutters row">
               <div className="pr-3">
             
-                <Image width={130} height={140} alt="Dr. Mark Tee Kit Tsun" className="card-img img-thumbnail" src={staff.image} />
+                <Image width={130} height={140} alt={staff.name} className="card-img img-thumbnail" src={staff.image} />
 
                 </div>
                 <div>
@@ -70,4 +70,4 @@ const staffs = ({ staffs })  => {
   )
 }
 
-export default staffs
+export default Staffs

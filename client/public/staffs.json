@@ -18,5 +18,15 @@
         "mailto": "mailto:sfu@swinburne.edu.my",
         "email": "sfu@swinburne.edu.my",
         "website": "https://www.swinburne.edu.my/staff/fu-swee-tee.php"
+    },
+    {
+        "id": 3,
+        "image": "/wp-content/uploads/faculty-engineering-computing-science/sim-kwan-hua.jp",
+        "name": "Sim Kwan Hua",
+        "role": "Teaching Fellow",
+        "faculty": "Faculty of Engineering, Computing and Science",
+        "mailto": "mailto:khsim@swinburne.edu.my",
+        "email": "khsim@swinburne.edu.my",
+        "website": "https://www.swinburne.edu.my/staff/sim-kwan-hua.php"
     }
   ]
