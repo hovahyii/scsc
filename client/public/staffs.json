@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "image": "/wp-content/uploads/2019/02/marktee.jpg",
+        "name": "Dr. Mark Tee Kit Tsun",
+        "role": "Instructor",
+        "faculty": "Faculty of Engineering, Computing and Science",
+        "mailto": "mailto:mtktsun@swinburne.edu.my",
+        "email": "mtktsun@swinburne.edu.my",
+        "website": "https://www.swinburne.edu.my/staff/dr-mark-tee-kit-tsun.php"
+    }
+    {
+        "id": 2,
+        "image": "/wp-content/uploads/2016/07/Fu_Swee_Tee.png",
+        "name": "Fu Swee Tee",
+        "role": "Teaching Fellow",
+        "faculty": "Faculty of Engineering, Computing and Science",
+        "mailto": "mailto:sfu@swinburne.edu.my",
+        "email": "sfu@swinburne.edu.my",
+        "website": "https://www.swinburne.edu.my/staff/fu-swee-tee.php"
+    }
+  ]

@@ -1,8 +1,12 @@
 import Nav from '../components/Nav'
+import Js from '../components/Js'
 
 const about = () => {
   return (
     <body>
+
+      <Js />
+      
       <div className="container-fluid">
 
       <div className="row">
@@ -29,6 +33,7 @@ const about = () => {
 
           <h2>In SCSC, we provide you:</h2>
           <ul>
+              <li> environment to learn and grow</li>
               <li> programming bootcamps</li>
               <li> useful workshops</li>
               <li> resources, platform to learn about various type of programming</li>
