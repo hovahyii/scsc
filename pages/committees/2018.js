@@ -14,12 +14,12 @@ const oneEight = () => {
       <Nav />
 
    
-    <main class="col-md markdown-body">
+    <main className="col-md markdown-body">
 
     <h1>Committees 2018</h1>
                 <p>They started the club and passed down the legacy</p>
                
-                    <table class="table table-striped">
+                    <table className="table table-striped">
                         <thead>
                             <tr>
                                 <th>Name</th>

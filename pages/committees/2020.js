@@ -1,7 +1,7 @@
 import Nav from '../../components/Nav'
 import Js from '../../components/Js'
 
-const twoOne = () => {
+const twenty = () => {
   return (
 
     <body>
@@ -14,12 +14,12 @@ const twoOne = () => {
       <Nav />
 
    
-    <main class="col-md markdown-body">
+    <main className="col-md markdown-body">
 
-    <h1>Committees 2021</h1>
+    <h1>Committees 2020</h1>
     
                    
-                        <table class="table table-striped">
+                        <table className="table table-striped">
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -28,23 +28,30 @@ const twoOne = () => {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>LAI KOK WUI</td>
+                                    <td>Tony Lee</td>
                                     <td>President</td>
                                 </tr>
                                 <tr>
-                                    <td>CHIN ZHAN HUNG</td>
+                                    <td>Wong Jun Jie</td>
                                     <td>Vice President</td>
                                 </tr>
                                 <tr>
-                                    <td>IVAN ONG</td>
+                                    <td>Low Lip Shen</td>
                                     <td>Secretary</td>
                                 </tr>
-                            
                                 <tr>
-                                    <td>ADAM SZE JET</td>
+                                    <td>Josiah Yang Qi</td>
+                                    <td>Vice Secretary</td>
+                                </tr>
+                                <tr>
+                                    <td>Sze Xi Jie</td>
                                     <td>Treasurer</td>
                                 </tr>
-                        
+                                <tr>
+                                    <td>Ian Marcellus Ong Hong</td>
+                                    <td>Vice Treasurer</td>
+                                </tr>
+
                                
                             </tbody>
                         </table>
@@ -58,4 +65,4 @@ const twoOne = () => {
   )
 }
 
-export default twoOne
+export default twenty

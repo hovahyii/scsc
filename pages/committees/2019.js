@@ -1,7 +1,7 @@
 import Nav from '../../components/Nav'
 import Js from '../../components/Js'
 
-const twenty = () => {
+const oneNine = () => {
   return (
 
     <body>
@@ -14,12 +14,13 @@ const twenty = () => {
       <Nav />
 
    
-    <main class="col-md markdown-body">
+    <main className="col-md markdown-body">
 
-    <h1>Committees 2020</h1>
+    <h1>Committees 2019</h1>
     
+                    <p>Also known as The Jedi Council</p>
                    
-                        <table class="table table-striped">
+                        <table className="table table-striped">
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -52,7 +53,35 @@ const twenty = () => {
                                     <td>Vice Treasurer</td>
                                 </tr>
 
+                                <tr>
+                                    <th className="text-center" colspan="2">Committees</th>
+                                </tr>
                                
+
+                                <tr>
+                                    <td className="text-center" colspan="2">Jehovah Yii Zui Hon (Hovah)</td>
+
+                                </tr>
+                                <tr>
+                                    <td className="text-center" colspan="2">Thon Pun Liang</td>
+
+                                </tr>
+                                <tr>
+                                    <td className="text-center" colspan="2">Kueh Hang Zen</td>
+                                </tr>
+                             
+                                <tr>
+                                    <td className="text-center" colspan="2">Lee Zhe Sheng</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-center" colspan="2">Sheldon James Cameron</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-center" colspan="2">Kok Zhen Hui</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-center" colspan="2">Dinith Walgama (Dan)</td>
+                                </tr>
                             </tbody>
                         </table>
     </main>
@@ -65,4 +94,4 @@ const twenty = () => {
   )
 }
 
-export default twenty
+export default oneNine

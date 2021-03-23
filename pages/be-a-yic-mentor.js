@@ -18,7 +18,7 @@ const yic = () => {
           <main className="col-md markdown-body">
 
 
-          <h1>Young Innovate Challenge</h1>
+          <h1>Be A YIC Mentor</h1>
 
           <p>
             Young Innovators Challenge started in year 2013, with only 2 schools and 4 teams of students involved. Today we have gotten more than 400 schools and 6000 students participated in the competition. 

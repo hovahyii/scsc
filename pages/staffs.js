@@ -24,7 +24,7 @@ const Staffs = ({ staffs })  => {
 
       <main className="col-md">
 
-          <a data-id="" id="staff" ></a><h1><a data-id="" href="#staff">Staffs</a></h1>
+          <h1>Staff</h1>
 
           <p className="mb-4 mt-4">Email us all at <a href="computerscience.club@students.swinburne.edu.my">computerscience.club@students.swinburne.edu.my</a>!</p>
           
