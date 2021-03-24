@@ -25,7 +25,7 @@ const EditEvent = ({ event }) => {
 
     const updateEvent = async () => {
         try {
-            const res = await fetch(`http://localhost:3000/api/events/${router.query.id}`, {
+            const res = await fetch(`https://scsc.vercel.app/api/events/${router.query.id}`, {
                 method: 'PUT',
                 headers: {
                     "Accept": "application/json",
@@ -157,7 +157,7 @@ const EditEvent = ({ event }) => {
 }
 
 EditEvent.getInitialProps = async ({ query: { id } }) => {
-    const res = await fetch(`http://localhost:3000/api/events/${id}`);
+    const res = await fetch(`https://scsc.vercel.app/api/events/${id}`);
     const { data } = await res.json();
 
     return { event: data }

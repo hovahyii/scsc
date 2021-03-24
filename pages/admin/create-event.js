@@ -25,7 +25,7 @@ const NewEvent = () => {
 
     const createEvent = async () => {
         try {
-            const res = await fetch('http://localhost:3000/api/events', {
+            const res = await fetch('https://scsc.vercel.app/api/events', {
                 method: 'POST',
                 headers: {
                     "Accept": "application/json",
