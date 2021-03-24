@@ -19,6 +19,9 @@
 * [VS Code](https://code.visualstudio.com/) - awesome web-based text editor
 * [markdown-it](https://guides.github.com/features/mastering-markdown/) - Markdown parser done right. Fast and easy to extend.
 * [NextJS](https://nextjs.org/) - Markdown parser done right. Fast and easy to extend.
+* [MongoDB](https://www.mongodb.com/) - MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need.
+* [NodeJs](https://nodejs.org/) - Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+
 
 
 <br/>
