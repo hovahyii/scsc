@@ -7,10 +7,6 @@ const EventSchema = new mongoose.Schema({
         unique: true,
         maxlength: [40, 'Title cannot be more than 40 characters']
     },
-    image: {
-        type: String,
-        required: true
-    },
     date: {
         type: String,
         required: true
@@ -26,6 +22,8 @@ const EventSchema = new mongoose.Schema({
     description: {
         type: String,
         required: true,
+        maxlength: [200, 'Description cannot be more than 200 characters']
+
     },
     link: {
         type: String,
