@@ -23,6 +23,15 @@
 
 <br/>
 
+
+
+## 📈 Space for improvement for future generation
+* Make user authetication
+* update UI
+* Add more features to the admin dashboard
+
+<br/>
+
 ## 📝 License
 MIT
 
