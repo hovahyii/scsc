@@ -58,7 +58,7 @@ const Event = ({ events }) => {
 }
 
 Event.getInitialProps = async () => {
-    const res = await fetch('https://scsc.vercel.app/api/events');
+    const res = await fetch('https://scsc-sarawak.vercel.app/api/events');
     const { data } = await res.json();
   
     return { events: data }
