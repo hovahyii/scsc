@@ -3,7 +3,7 @@ import Js from '../components/Js'
 import Image from 'next/image'
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://raw.githubusercontent.com/Swinburne-Sarawak-Computer-Science-Club/scsc/next/client/public/staffs.json');
+  const res = await fetch('https://raw.githubusercontent.com/Swinburne-Sarawak-Computer-Science-Club/scsc/next/public/staffs.json');
   const data = await res.json();
 
   return {

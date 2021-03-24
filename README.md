@@ -24,7 +24,6 @@
 <br/>
 
 
-
 ## 📈 Space for improvement for future generation
 * Make user authetication
 * update UI
