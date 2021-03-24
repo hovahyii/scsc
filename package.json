@@ -1,0 +1,21 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "isomorphic-unfetch": "^3.1.0",
+    "mongoose": "^5.12.1",
+    "next": "^10.0.9",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "sass": "^1.32.8",
+    "semantic-ui-react": "^2.0.3",
+    "styled-components": "^5.2.1"
+  }
+}
