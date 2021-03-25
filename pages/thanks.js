@@ -1,11 +1,23 @@
 import Nav from '../components/Nav'
 import Js from '../components/Js'
+import Head from "next/head";
 
 const credits = () => {
   return (
 
     <body>
+      
+      <Head>
+      <title>Credits</title>
+      <meta name="description" content="Thanks our alumni and friends for creating and sponsoring this website" />
+      <meta name="keywords" content="Web developer, founder of SCSC, sponsor of SCSC" />
+      <meta name="author" content="Hovah Yii"/>
+      </Head>
+
+
       <Js />
+
+
     <div className="container-fluid">
 
     <div className="row">

@@ -1,9 +1,19 @@
 import Nav from '../components/Nav'
 import Js from '../components/Js'
+import Head from "next/head";
 
 const about = () => {
   return (
     <body>
+
+
+      <Head>
+        <title>About SCSC</title>
+        <meta name="description" content="SCSC was founded in April 2018 by Aylwin Sim and Hovah Yii. The club later was passed to Dr. Mark Tee Kit Tsun by the end of 2018. Since then, SCSC has been collaborating with IEEE, Robotics clubs to organise activities..." />
+        <meta name="keywords" content="SCSC, About SCSC, Swinburne Computer Science Club, SCSC Sarawak, Swinburne CompSci Club, History, what we provide, we provide you" />
+        <meta name="author" content="Hovah Yii"/>
+      </Head>
+
 
       <Js />
       

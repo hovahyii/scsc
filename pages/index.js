@@ -1,11 +1,18 @@
 import Nav from '../components/Nav'
 import Js from '../components/Js'
+import Head from "next/head";
 
 
 export default function Home() {
   return (
 
     <div>
+      <Head>
+      <title>Welcome to SCSC</title>
+      <meta name="description" content="Swinburne Sarawak Computer Science Club also known as SCSC was founded in 2018 by Hovah YIi and Alywin Sim" />
+      <meta name="keywords" content="SCSC, About SCSC, Swinburne Computer Science Club, SCSC Sarawak, Swinburne CompSci Club" />
+      <meta name="author" content="Hovah Yii"/>
+      </Head>
       
       <Js />
      

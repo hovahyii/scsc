@@ -5,7 +5,11 @@ const Nav = () => {
   return (
 
     <aside className="col-md">
-        <Head><script>document.getElementById("year").innerHTML = new Date().getFullYear();</script></Head>
+        <Head>
+          <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta charset="UTF-8">
+        </Head>
     <header>
     
         <h1 data-id="this-is-cs50"><a href="/">This is SCSC</a></h1>

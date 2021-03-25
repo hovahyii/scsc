@@ -1,11 +1,20 @@
 import Nav from '../components/Nav'
 import Js from '../components/Js'
 import fetch from 'isomorphic-unfetch';
+import Head from "next/head";
 
 const Events = ({ events })  => {
   return (
 
     <body>
+
+      <Head>
+      <title>Upcoming Events</title>
+      <meta name="description" content="This page is all about SCSC upcoming events" />
+      <meta name="keywords" content="event, upcoming event, event of SCSC" />
+      <meta name="author" content="Hovah Yii"/>
+      </Head>
+
       <Js />
     <div className="container-fluid">
 

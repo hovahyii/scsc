@@ -1,6 +1,7 @@
 import Nav from '../components/Nav'
 import Js from '../components/Js'
 import Image from 'next/image'
+import Head from "next/head";
 
 export const getStaticProps = async () => {
   const res = await fetch('https://raw.githubusercontent.com/Swinburne-Sarawak-Computer-Science-Club/scsc/master/public/staffs.json');
@@ -15,6 +16,14 @@ const Staffs = ({ staffs })  => {
   return (
 
     <body>
+      <Head>
+      <title>Staffs</title>
+      <meta name="description" content="Staffs of the SCSC" />
+      <meta name="keywords" content="Staff SCSC, Advisor SCSC,Advisor Swinburne Computer Science Club, Advisor SCSC Sarawak, Advisor Swinburne CompSci Club" />
+      <meta name="author" content="Hovah Yii"/>
+      </Head>
+
+
       <Js />
     <div className="container-fluid">
 

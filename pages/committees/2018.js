@@ -1,11 +1,20 @@
 import Nav from '../../components/Nav'
 import Js from '../../components/Js'
 import Link from 'next/link'
+import Head from "next/head";
 
 const oneEight = () => {
   return (
 
     <body>
+
+    <Head>
+      <title>2018</title>
+      <meta name="description" content="All about the SCSC committees 22018019" />
+      <meta name="keywords" content="scsc committees, committee 2018" />
+      <meta name="author" content="Hovah Yii"/>
+      </Head>
+
       <Js />
     <div className="container-fluid">
 

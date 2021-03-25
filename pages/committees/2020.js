@@ -1,10 +1,19 @@
 import Nav from '../../components/Nav'
 import Js from '../../components/Js'
+import Head from "next/head";
 
 const twenty = () => {
   return (
 
     <body>
+        <Head>
+      <title>2020</title>
+      <meta name="description" content="All about the SCSC committees 2020" />
+      <meta name="keywords" content="scsc committees, committee 2020" />
+      <meta name="author" content="Hovah Yii"/>
+      </Head>
+
+
 
       <Js />
     <div className="container-fluid">

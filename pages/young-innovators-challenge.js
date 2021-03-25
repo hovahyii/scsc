@@ -1,10 +1,18 @@
 import Nav from '../components/Nav'
 import Js from '../components/Js'
 import Link from 'next/link'
+import Head from "next/head";
 
 const yic = () => {
   return (
     <body>
+
+      <Head>
+      <title>Young Innovators Challenge</title>
+      <meta name="description" content="Young Innovators Challenge (YIC) is jointly organized by Yayasan Sime Darby and Chumbaka with Malaysia Digital Economy Corporation (MDEC) as its strategic partner, and supported by the Ministry of Education Malaysia. For 2021, Swinburne Sarawak is once again the technical partner for this event." />
+      <meta name="keywords" content="Young Innovators Challenge, YIC, What is YIC, about yic, news on yic" />
+      <meta name="author" content="Hovah Yii"/>
+      </Head>
 
       <Js />
       

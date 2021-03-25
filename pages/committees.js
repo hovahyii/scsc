@@ -1,11 +1,22 @@
 import Nav from '../components/Nav'
 import Js from '../components/Js'
+import Head from "next/head";
 
 const committees = () => {
   return (
 
     <body>
+  
+
+      <Head>
+      <title>Committees</title>
+      <meta name="description" content="All about SCSC founders, previous committee, the Jedi Council until now" />
+      <meta name="keywords" content="committee, scsc committee, the jedi council, the founder" />
+      <meta name="author" content="Hovah Yii"/>
+      </Head>
+
       <Js />
+      
     <div className="container-fluid">
 
     <div className="row">

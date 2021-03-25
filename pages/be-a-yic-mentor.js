@@ -1,11 +1,17 @@
 import Nav from '../components/Nav'
 import Js from '../components/Js'
 import Link from 'next/link'
+import Head from "next/head";
 
 const yic = () => {
   return (
     <body>
-
+       <Head>
+      <title>Be a YIC Mentors</title>
+      <meta name="description" content="The benefits and things about becoming a Swinburne YIC Mentors" />
+      <meta name="keywords" content="yic mentors, mentors, why you should be a yic mentor, requirement of a mentor, how to join yic mentor" />
+      <meta name="author" content="Hovah Yii"/>
+      </Head>
       <Js />
       
       <div className="container-fluid">
