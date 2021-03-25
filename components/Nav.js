@@ -6,9 +6,11 @@ const Nav = () => {
 
     <aside className="col-md">
         <Head>
-          <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+  
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <meta charset="UTF-8">
+          <meta charset="UTF-8"></meta>
+          <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+        
         </Head>
     <header>
     
