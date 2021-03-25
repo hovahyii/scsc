@@ -7,9 +7,9 @@ const norms = () => {
   return (
     <body>
       <Head>
-        <title>Committee SCSC</title>
-        <meta name="description" content="Founder and committee of the SCSC" />
-        <meta name="keywords" content="SCSC, Committee SCSC,Committee Swinburne Computer Science Club,Committee SCSC Sarawak, Committee Swinburne CompSci Club" />
+        <title>Norm </title>
+        <meta name="description" content="SCSC new norms after COVID-19" />
+        <meta name="keywords" content="norms, team microsoft, events, dr mark" />
         <meta name="author" content="Hovah Yii"/>
       </Head>
       <Js />
