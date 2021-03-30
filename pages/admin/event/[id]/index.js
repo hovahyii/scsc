@@ -20,7 +20,7 @@ const Event = ({ event }) => {
     const deleteEvent = async () => {
         const eventId = router.query.id;
         try {
-            const deleted = await fetch(`https://scsc-sarawak.vercel.app/api/events/${eventId}`, {
+            const deleted = await fetch(`https://swinburne-sarawak-compsci-club.herokuapp.com/api/events/${eventId}`, {
                 method: "Delete"
             });
 
@@ -61,7 +61,7 @@ const Event = ({ event }) => {
 }
 
 Event.getInitialProps = async ({ query: { id } }) => {
-    const res = await fetch(`https://scsc-sarawak.vercel.app/api/events/${id}`);
+    const res = await fetch(`https://swinburne-sarawak-compsci-club.herokuapp.com/api/events/${id}`);
     const { data } = await res.json();
 
     return { event: data }

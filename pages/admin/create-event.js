@@ -25,7 +25,7 @@ const NewEvent = () => {
 
     const createEvent = async () => {
         try {
-            const res = await fetch('https://scsc-sarawak.vercel.app/api/events', {
+            const res = await fetch('https://swinburne-sarawak-compsci-club.herokuapp.com/api/events', {
                 method: 'POST',
                 headers: {
                     "Accept": "application/json",

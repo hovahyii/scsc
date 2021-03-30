@@ -75,7 +75,7 @@ const Events = ({ events })  => {
 }
 
 Events.getInitialProps = async () => {
-  const res = await fetch('https://scsc-sarawak.vercel.app/api/events');
+  const res = await fetch('https://swinburne-sarawak-compsci-club.herokuapp.com/api/events');
   const { data } = await res.json();
 
   return { events: data }
