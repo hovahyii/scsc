@@ -7,7 +7,7 @@ const ScriptJs = () => {
         <Head>  
      
         {/*  https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use */}
-        <link href="/assets/%40fortawesome/fontawesome-free/css/all.min4935.css" rel="stylesheet" />
+        <link href="/assets/@fortawesome/fontawesome-free/css/all.min4935.css" rel="stylesheet" />
     
         <link rel="stylesheet" type="text/css" href="/assets/responsive.css" />
     
