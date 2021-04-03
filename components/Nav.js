@@ -9,7 +9,6 @@ const Nav = () => {
   
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <meta charset="UTF-8"></meta>
-          <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
         
         </Head>
     <header>
@@ -17,7 +16,7 @@ const Nav = () => {
         <h1 data-id="this-is-cs50"><a href="/">This is SCSC</a></h1>
 
         <p><Link href="https://www.swinburne.edu.my/">Swinburne University of Technology Sarawak Campus</Link><br /> 
-        Fall <span id="year"></span>
+        Fall {new Date().getFullYear()}{" "}
 
 
         </p>
@@ -50,7 +49,9 @@ const Nav = () => {
           <h4>Follow us</h4>
           <a href="https://www.facebook.com/swinburnecompsci" className="fa fa-facebook"></a>
           <a href="https://www.instagram.com/swinburnecompsci/" className="fa fa-instagram"></a>
-          <a href="https://github.com/Swinburne-Sarawak-Computer-Science-Club" className="fa fa-github"></a>
+          <a href="https://github.com/Swinburne-Sarawak-Computer-Science-Club" className="fa fa-github"></a> 
+          &nbsp;
+          <a href="https://discord.gg/VTXP3stM96" className="fab fa-discord fa-2x"></a>
 
         </ul>
 
