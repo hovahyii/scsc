@@ -51,7 +51,7 @@ const Nav = () => {
           <a href="https://www.instagram.com/swinburnecompsci/" className="fa fa-instagram"></a>
           <a href="https://github.com/Swinburne-Sarawak-Computer-Science-Club" className="fa fa-github"></a> 
           &nbsp;
-          <a href="https://discord.gg/VTXP3stM96" className="fab fa-discord fa-2x"></a>
+          <a href="https://discord.gg/AHM8qyCybV" className="fab fa-discord fa-2x"></a>
 
         </ul>
 
