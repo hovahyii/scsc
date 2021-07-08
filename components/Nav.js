@@ -40,7 +40,7 @@ const Nav = () => {
         <ul className="small">
           <li data-marker="*"><a href="/young-innovators-challenge/" >Young Innovators Challenge</a></li>
             <li data-marker="*"><a href="/be-a-yic-mentor/" >YIC Mentor</a></li>
-            <li data-marker="*"><a href="http://tiny.cc/joinscsc" target="_blank">Join SCSC</a></li>
+            <li data-marker="*"><a href="https://forms.gle/9KmgnV841GiwhbPT9" target="_blank">Join SCSC</a></li>
         </ul>
 
         <hr />
